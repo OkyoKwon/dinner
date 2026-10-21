@@ -70,7 +70,7 @@ h2 .heart{position:absolute;right:-10px;bottom:-6px}
 .pill{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:54px;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none;font-family:var(--kr);font-size:15px;letter-spacing:.14em;border:1.5px solid var(--ink);cursor:pointer;font-weight:500}
 .pill.ghost{background:transparent;color:var(--ink)}
 .pill svg{width:18px;height:18px}
-.pill:focus-visible,.call a:focus-visible{outline:2px solid var(--heart);outline-offset:3px}
+.pill:focus-visible{outline:2px solid var(--heart);outline-offset:3px}
 .addr{margin-top:14px;font-size:14.5px;color:var(--muted)}
 .copied{font-size:14px;color:var(--heart);min-height:1.5em;margin-top:4px}
 
@@ -99,9 +99,6 @@ h2 .heart{position:absolute;right:-10px;bottom:-6px}
 .person .who{min-width:0}
 .person .who b{display:block;font-weight:500;font-size:18px;letter-spacing:.06em}
 .person .who span{font-family:var(--latin);font-size:16px;letter-spacing:.04em;font-variant-numeric:tabular-nums;color:var(--muted);user-select:all}
-.call{display:flex;gap:8px;flex:none}
-.call a{display:inline-flex;align-items:center;justify-content:center;min-width:52px;height:44px;padding-inline:14px;border-radius:999px;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
-.call a.dark{background:var(--ink);color:var(--paper)}
 
 footer{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
 footer svg.toast{width:150px;height:auto}
@@ -110,7 +107,6 @@ footer small{font-family:var(--latin);font-size:13px;letter-spacing:.08em;color:
 
 @media (max-width:360px){
   .way{grid-template-columns:80px 1fr;column-gap:16px}
-  .person{flex-direction:column;align-items:flex-start}
 }
 @media (prefers-reduced-motion:no-preference){
   .hero .script.title,.couple{animation:rise .9s ease-out both}
@@ -249,11 +245,9 @@ footer small{font-family:var(--latin);font-size:13px;letter-spacing:.08em;color:
     <div class="contacts">
       <div class="person">
         <div class="who"><b>권오교</b><span>010-8363-2060</span></div>
-        <div class="call"><a class="dark" href="tel:01083632060">전화</a><a href="sms:01083632060">문자</a></div>
       </div>
       <div class="person">
         <div class="who"><b>신보현</b><span>010-9269-5305</span></div>
-        <div class="call"><a class="dark" href="tel:01092695305">전화</a><a href="sms:01092695305">문자</a></div>
       </div>
     </div>
   </section>
